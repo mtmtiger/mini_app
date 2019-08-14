@@ -1,0 +1,9 @@
+  <div class="menu-page">
+    <%= form_for(@tweet) do |f| %>
+      <h3>
+        編集する
+      </h3>
+      <%= f.text_area :text, cols: "50", placeholder: "text", rows: "5" %>
+      <%= f.submit value: "確定"%>
+    <% end %>
+  </div>

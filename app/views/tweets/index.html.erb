@@ -1,0 +1,9 @@
+<div class="tweets">
+  <p class="tweets-header"><span class="tweets-header-title">投稿一覧</span></p>
+  <% i = 0 %>
+  <% @tweets.each do |tweet| %>
+    <%= render partial: "tweet", locals: { tweet: tweet, input: i } %>
+  <% i += 1 %>
+  <% end %>
+</div>
+  <%= paginate(@tweets) %>

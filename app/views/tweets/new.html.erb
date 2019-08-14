@@ -1,0 +1,9 @@
+<div class="menu-page">
+  <h2>
+    投稿内容
+  </h2>
+  <%= form_for(@tweet) do |f| %>
+  <%= f.text_area :text, cols: "50", rows: "5" %>
+  <%= f.submit "投稿" %>
+  <% end %>
+</div>

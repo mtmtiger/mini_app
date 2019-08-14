@@ -1,0 +1,14 @@
+<% if user_signed_in? && tweet.user_id == current_user.id %>
+    <div class="current_user-box">
+<% elsif input.even? %>
+    <div class="tweet-box1">
+<% elsif input.odd? %>
+    <div class="tweet-box2">
+<% end %>
+      <span class="tweet-user-name"><%= tweet.user.nickname %>さんの投稿</span>
+      <%= simple_format(tweet.text) %>
+        <% if user_signed_in? && tweet.user_id == current_user.id %>
+          <%= link_to "編集", "/tweets/#{tweet.id}/edit", method: :get, class: "tweet-edit" %>
+          <%= link_to "削除", "tweets/#{tweet.id}", method: :delete, class: "tweet-delete" %>
+        <% end %>
+    </div>

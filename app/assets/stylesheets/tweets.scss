@@ -1,0 +1,138 @@
+// Place all the styles related to the tweets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: midnightblue;
+}
+
+.nav-header {
+  background-color: #00bfa5;
+  height: 80px;
+  min-width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.pagination {
+  background-color: #00bfa5;
+  height: 80px;
+  min-width: 100%;
+}
+
+.logo-box {
+  width: 150px;
+  text-align: center;
+}
+
+.brand-logo {
+  line-height: 80px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  display: inline-block;
+  height: 80px;
+  width: 150px;
+  background-color: deeppink;
+}
+
+ul {
+  background-color: dodgerblue;
+  width: 200px;
+  float: right;
+}
+
+li {
+  float: right;
+  width: 50%;
+  line-height: 80px;
+  text-align: center;
+}
+
+.menu {
+  display: inline-block;
+  height: 80px;
+  width: 100px;
+}
+
+.tweets {
+  padding-top: 80px;
+  height: calc(100vh - 80px - 80px);
+  width: 96%;
+  background-color: palegoldenrod;
+  margin: 0 auto;
+}
+
+.tweets-header {
+height: 70px;
+text-align: center;
+border-bottom: solid 1px black;
+}
+
+.tweets-header-title {
+  line-height: 70px;
+  font-size: 35px;
+}
+
+.tweet-user-name {
+  text-decoration: underline;
+}
+
+.current_user-box {
+  padding: 10px;
+  border-top: solid 1px black;
+  word-wrap: break-word;
+}
+
+.tweet-box1 {
+  padding: 10px;
+  border-top: solid 1px black;
+  background-color: rgb(245, 211, 211);
+}
+
+.tweet-box2 {
+  padding: 10px;
+  border-top: solid 1px black;
+  background-color: rgb(187, 207, 250);
+}
+
+.tweet-edit {
+  color: white;
+  display: inline-block;
+  width: 60px;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  border: solid 1px #00bfa5;
+  background-color: #00bfa5;
+}
+
+.tweet-delete {
+  color: white;
+  display: inline-block;
+  width: 60px;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  border: solid 1px #00bfa5;
+  background-color: #00bfa5;
+}
+
+
+.tweet-delete:hover {
+  color: red;
+}
+
+.menu-page {
+  padding-top: 80px;
+  min-height: 400px;
+  width: 96%;
+  background-color: palegoldenrod;
+  margin: 0 auto;
+}
+
